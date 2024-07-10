@@ -16,7 +16,7 @@ public class student_dao {
 
 	public String getdetail(Student a) throws AgeException {
 		sr.save(a);
-		return " Student_Data _ saved SuccesFully";
+		return " Data saved Sucess Fully in git ";
 	}
 
 	public String postdetail(List<Student> a) {

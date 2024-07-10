@@ -24,7 +24,7 @@ public class student_Controller {
 		return ss.getdetail(a);
 	}
 
-	@PostMapping(value = "/post_all")
+	@PostMapping(value = "/post_data")
 	public String postdetail(@RequestBody List<Student> a) {
 		return ss.postdetail(a);
 	}
@@ -43,6 +43,10 @@ public class student_Controller {
 	public List<Student> getMatch_student(@PathVariable String a) throws NameNotFoundException {
 		return ss.getMatch_student(a);
 
+	}
+	@GetMapping(value ="view/{al}")
+	public String get_name(@PathVariable String al) {
+		return al;
 	}
 
 	/// --------------Exception ___handler ----------------->
