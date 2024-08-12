@@ -20,6 +20,11 @@ public class Employee {
 		return id;
 	}
 
+	@Override
+	public String toString() {
+		return "Employee [id=" + id + ", name=" + name + ", gender=" + gender + "]";
+	}
+
 	public String getName() {
 		return name;
 	}
